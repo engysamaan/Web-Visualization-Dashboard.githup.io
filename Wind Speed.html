@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>City Latitude</title>
-    <link rel="stylesheet" type="text/css" href="./city_style.css">
-  </head>
+    <title>Lattiutde vs Wind Speed</title>
+    <link rel="stylesheet" type="text/css" href="./city_style.css">  
+</head>
 
 <body>
   
@@ -42,10 +42,10 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                       <li><a href="./Max Temp.html" target="_blank">Max Temperature</a></li>
-                        <li><a href="./Humidity.html" target="_blank">Humidity</a></li>
-                        <li><a href="./Cloudiness.html" target="_blank">Cloudiness</a></li>
-                        <li><a href="./Wind Speed.html" target="_blank">Wind Speed</a></li>
+                            <li><a href="./Max Temp.html" target="_blank">Max Temperature</a></li>
+                            <li><a href="./Humidity.html" target="_blank">Humidity</a></li>
+                            <li><a href="./Cloudiness.html" target="_blank">Cloudiness</a></li>
+                            <li><a href="./Wind Speed.html" target="_blank">Wind Speed</a></li>
                       </ul>
                     </li>
                     <li><a href="./Comparisons.html">Comparison</a></li>
@@ -56,87 +56,46 @@
             </div>
           </nav>
           <!-- End of navbar -->
-      
-                
-            <!--start of left container-->
+
+                  <!--start of left container-->
             	<!-- Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the browser window to understand how the Bootstrap responsive grid system works. -->
 	<div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-8 ">
                     <div class="content">
-                        <h1>Summary: Latitude vs. X</h1>
+                        <h1>Lattiutde vs Wind Speed</h1>
                             <hr/>
-                        <img src="./Fig1.png" alt="Latitude vs. Max Temperature" height="200" width="200" align="left">                 
+                        <img src="./Fig4.png" alt="Max Temperature" height="500" width="500" align="center">                 
                             
-                            <p> The purpose of this project was to analyze how weather 
-                            changes as you get closer to the equater. 
-                            To accomplish this analysis. we first pulled data from 
-                            the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</p>
-                            <p class="category">After assembling the dataset, 
-                                we used Matplotlib to plot various aspects of the weather vs. latitude. 
-                                Factors we looked at included:temperature, cloudiness, windspeed, 
-                                and humidity. This site provides the source data and visualizations 
-                                created as part of the analysis,as well as explanations and descriptions 
-                                of any trends and correlations witnessed.</p>			
-                    </div>                   
+                        <p class="category">There is no strong relationship between latitude and wind speed. \n",
+                                "However, in northern hemispheres there is a flurry of cities with over 20 mph of wind.
+                        </p>
+			
+                    </div>                      
                 </div>
-                 <!--End of left container-->
-                 
-         <!--start of right container-->
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4 ">
-                             <div class="right-content">
+
+
+                  <!--start of right container-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 ">
+                        <div class="right-content">
                               <h2>visualization</h2>
                             <hr/>
                             <div class="sidebar-top">
                                 <div class="box">
                                     <div class="container-fluid">
                                    <a href="./Max Temp.html"><img src="./Fig1.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
-                                   <a href="#"><img src="./Fig2.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
-                                   <a href="#"><img src="./Fig3.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
-                                   <a href="#"><img src="./Fig4.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
+                                   <a href="./Humidity.html"><img src="./Fig2.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
+                                   <a href="./Cloudiness.html"><img src="./Fig3.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
+                                   <a href="./Wind Speed.html"><img src="./Fig4.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                     </div>
                 </div>
-
                 <!--End of right container-->
 
             </div>
             
         </div>
-                
-
-    
-
-
-
-
-         
-    </div>
-
-</nav>
-     
-      
-      
-
-
-
-
-
-
-
-
-        
-      </body>
-      </nav>
-
-
-
-
-
-
-
-
-</html>

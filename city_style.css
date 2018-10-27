@@ -93,8 +93,7 @@ body {
     }
 
     .box {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-left: 60px;
         background: white;
         background-size: cover;
         margin-bottom: 5px;
@@ -105,18 +104,16 @@ body {
       padding-top: 6px;
       padding-right: 0;
       padding-bottom: 100px;
-      height: auto;
-      margin-left: 52px;
-      margin-right: auto;
+      height: 600px;
+      margin-left: 20px;
     }
 
     .right-content{
         background: white;
         padding-top: 6px;
-        padding-right: 30px;
         padding: 20px;
-        
-    }
+        margin-left: 20px;
+      }
 
     h1 {
         color:lightseagreen;
@@ -156,7 +153,12 @@ body {
         margin-left: auto;
     }
 
+    .ptag{
+      margin-top: 100px;
+
+    }
       
+  
 
 
   /* ---start of container ---- */

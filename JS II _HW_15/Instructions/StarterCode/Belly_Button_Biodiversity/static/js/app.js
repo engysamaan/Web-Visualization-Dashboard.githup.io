@@ -5,14 +5,16 @@ d3.json("/metadata/" + sample).then(function(data) {
   // Use `d3.json` to fetch the metadata for a sample
   //var metadata = sample;
     // Use d3 to select the panel with id of `#sample-metadata`
-    var Panel = d3.select("#sample-metadata")
-    //var Panel = document.getElementById("#sample-metadata");
+    var Panel = d3.select("#sample-metadata");
+    console.log(Panel);
+    //var Panel = document.getElementById("sample-metadata");
     //console.log(metadata) 
     // Use `.html("") to clear any existing metadata
       Panel.html("");
     // Use `Object.entries` to add each key and value pair to the panel
     Object.entries(data).forEach(([key, value]) => {
-      Panel.append("h6").text(`${key}: ${value}`)
+      Panel.append("h6").text(`${key}:${value}`)
+      //Panel.append("h6").text(`<span>${key}:</span> ${value}`)
     });;
     
     // Hint: Inside the loop, you will need to use d3 to append new
@@ -43,9 +45,9 @@ d3.json("/samples/" + sample).then(function(data) {
       }
 
     }]
-    var layout = {margin: { t: 0, l: 0 }}
+    var layout = {margin: { t: 0, l: 0 }, autosize: true, width: 940}
 
-    Plotly.plot("bubble", Bubble_data , layout);
+    Plotly.newPlot("bubble", Bubble_data , layout);
 
     // @TODO: Build a Pie Chart
     // HINT: You will need to use slice() to grab the top 10 sample_values,
@@ -56,9 +58,9 @@ d3.json("/samples/" + sample).then(function(data) {
       hovertext : otu_labels.slice(0,10),
       type : "pie"
     }]
-    var layout = {margin: { t: 0, l: 0}}
+    //var layout = {margin: { t: 0, l: 0}}
 
-    Plotly.plot("pie", pie_data, layout);
+    Plotly.newPlot("pie", pie_data, layout);
 });
 }
 
